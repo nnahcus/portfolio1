@@ -28,7 +28,39 @@ function Home() {
   return (
     <Background>
       <Navbar />
-      <h1>Portfolio</h1>
+      {/* intro */}
+      <section className="pt-24 pb-28 px-5 sm:px-6 md:px-12 lg:px-16 xl:px-20">
+        <div className="container mx-auto ">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-clashdisplay font-medium ">Hello, Sawasdee ka</h1>
+          <h3 className="text-2xl sm:text-3xl md:text-4xl py-4  font-clashdisplay">It's me <span className="text-white">Suchanya Chunlabut</span></h3>
+          <p className="text-md sm:text-lg py-1 font-poppins">I passionate about coding and programming.</p>
+          <p className="text-md sm:text-lg py-1 font-poppins">I enjoy building web applications, and solving challenging problems.</p>
+          <div className="flex gap-4 py-4">          
+          <Link to="https://github.com/">
+          <button type="button" className="hover:bg-zinc-100 font-chillax tracking-wide bg-white px-6 py-2.5 text-lg rounded-xl inline-flex items-center text-center gap-2 cursor-pointer outline outline-offset-0 outline-solid outline-black">Contact me </button>
+          </Link>
+          </div>
+        </div>
+      </section>
+      {/* หน้า about */}
+      <section id="about" className="pt-24 pb-28 py-20 px-5 sm:px-6 md:px-12 lg:px-16 xl:px-20">
+        <div className="container mx-auto">          
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-clashdisplay font-medium ">Hello, Sawasdee ka</h1>
+          <h3 className="text-2xl sm:text-3xl md:text-4xl py-4  font-clashdisplay">It's me <span className="text-white">Suchanya Chunlabut</span></h3>
+          <p className="text-md sm:text-lg py-1 font-poppins">I passionate about coding and programming.</p>
+          <p className="text-md sm:text-lg py-1 font-poppins">I enjoy building web applications, and solving challenging problems.</p>
+          <div className="flex gap-4 py-4">          
+          <Link to="https://github.com/">
+          <button type="button" className="hover:bg-zinc-100 font-chillax tracking-wide bg-white px-6 py-2.5 text-lg rounded-xl inline-flex items-center text-center gap-2 cursor-pointer outline outline-offset-0 outline-solid outline-black">Contact me </button>
+          </Link>
+          </div>
+        </div>
+      </section>
+
+
+      <section></section>
+      <section></section>
+      <section></section>
     </Background>
   );
 }
