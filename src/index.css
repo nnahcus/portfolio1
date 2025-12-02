@@ -17,6 +17,18 @@
   font-family: "Switzer";
   src: url(../src/assets/font/Switzer-Variable.ttf);
 }
+@font-face {
+  font-family: "GeneralSans";
+  src: url(../src/assets/font/GeneralSans-Variable.ttf);
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(../src/assets/font/Quicksand-Variable.ttf);
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(../src/assets/font/Satoshi-Variable.ttf);
+}
 
 @theme{
   --font-anuphan: "Anuphan", sans-serif;
@@ -26,5 +38,14 @@
   --font-chillax: "Chillax", sans-serif;
   --font-clashdisplay: "ClashDisplay", sans-serif;
   --font-switzer: "Switzer", sans-serif;
+  --font-generalsans: "GeneralSans", sans-serif;
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-satoshi: "Satoshi", sans-serif;
+
+  --color-red1: #CECCCC;
+  --color-red2: #FF7779;
+  --color-red3: #FF4C51;
+  --color-red4: #E37D7B;
+  --color-red5: #CD3D49;
 }
 
