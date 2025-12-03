@@ -4,9 +4,44 @@ import { LuSend } from "react-icons/lu";
 import { IoMailOutline, IoCall } from "react-icons/io5";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link } from "react-router";
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+import Swal from "sweetalert2";
 
 
 function Contact(){
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_2zzoi75', 'template_pkya8t3', form.current, {
+        publicKey: 'Fq0yJWrTN0ewZ4XW_',
+      })
+      .then(
+        () => {
+          Swal.fire({
+            title: "Hooray!!!",
+            text: "Message sent successfully!",
+            icon: "success",
+            confirmButtonColor: "#FF2E2E",
+          });
+          form.current.reset();
+        },
+        (error) => {
+          console.log('message failed to send', error.text);
+          Swal.fire({
+            title: "Oops!",
+            text: "Failed to send message. Please try again.",
+            icon: "error"
+          });
+        },
+      );
+  };
+
+  
   return(
     <>
     <section id="Contact" className="min-h-screen flex relative overflow-hidden">
@@ -47,10 +82,10 @@ function Contact(){
         {/* two columns layout contact+email */}
         <div className="w-2/5 justify-between">
         <div className="bg-gray-200/20 backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  border border-white/30 shadow-lg p-6">
-          <form className="flex flex-col gap-2">
+          <form className="flex flex-col gap-2" ref={form} onSubmit={sendEmail}>
             <label htmlFor="Your Name" className="block mb-2 text-lg font-generalsans font-medium">Name</label>
             <input
-              type="text"
+              type="text" name="Your Name"
               placeholder="Your Name"
               className="font-poppins p-4 bg-gray-200/20 backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  border border-white/30 shadow-lg focus:outline-none focus:ring-2 focus:ring-red3/60 focus:ring-offset-2 focus:ring-offset-red5/50"
             />
@@ -58,7 +93,7 @@ function Contact(){
             <div> 
             <label htmlFor="Phone" className="block mb-2 text-lg font-generalsans font-medium">Phone Number</label>
             <input
-              type="tel"
+              type="tel" name="Phonenumber"
               placeholder="Your Phone Number"
               className="font-poppins w-full p-4 bg-gray-200/20 backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  border border-white/30 shadow-lg focus:outline-none focus:ring-2 focus:ring-red3/60 focus:ring-offset-2 focus:ring-offset-red5/50"
             />
@@ -66,21 +101,21 @@ function Contact(){
             <div>            
             <label htmlFor="email" className="block mb-2 text-lg font-generalsans font-medium">Email</label>
             <input
-              type="email"
+              type="email" name="email"
               id="email"
               placeholder="Your Email"
               className="font-poppins w-full p-4 bg-gray-200/20 backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  border border-white/30 shadow-lg focus:outline-none focus:ring-2 focus:ring-red3/60 focus:ring-offset-2 focus:ring-offset-red5/50"
             /></div>
             </div>
-            <label htmlFor="Your message" className="block mb-2 text-lg font-generalsans font-medium">Your Message</label>
+            <label htmlFor="message" className="block mb-2 text-lg font-generalsans font-medium">Your Message</label>
             <textarea
-              placeholder="Your Message"
+              placeholder="Message" name="message"
               className="font-poppins p-4 bg-gray-200/20 backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  border border-white/30 shadow-lg h-32 resize-none focus:outline-none focus:ring-2 focus:ring-red3/60 focus:ring-offset-2 focus:ring-offset-red5/50"
             ></textarea>
             {/* send message button */}
             <button
               type="submit"
-              className="w-full bg-red2 hover:bg-red-400 rounded-md border border-white/30 shadow-lg p-4 mt-2 font-satoshi font-medium tracking-wide px-4 py-2.5 text-xl inline-flex gap-2 items-center justify-center cursor-pointer outline outline-offset-0 outline-solid outline-black"
+              className="w-full bg-[#E86660] hover:bg-[#E1504E] rounded-md border border-white/30 shadow-lg p-4 mt-2 font-satoshi font-medium tracking-wide px-4 py-2.5 text-xl inline-flex gap-2 items-center justify-center cursor-pointer outline outline-offset-0 outline-solid outline-black"
             >
               <IconContext.Provider value={{ size: "1.2em" }}><LuSend /></IconContext.Provider>
               Send Message
