@@ -10,10 +10,10 @@ const projects = [
     {
         title: "Portfolio",
         description: "My personal portfolio website to showcase my skills, projects. Built with React, Tailwind CSS, and Vite.",
-        link: "#",
+        link: "https://suchanyaportfolio.vercel.app/",
         id: 2,
         image: "src/pic/localhost_5173_.png",
-        github: ""
+        github: "https://github.com/nnahcus/portfolio1"
     }
 ];
 export { projects };
