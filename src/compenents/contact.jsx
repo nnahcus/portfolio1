@@ -64,13 +64,13 @@ function Contact(){
                 +66 62 734 5024
               </h3>
           <div className="flex gap-4">          
-          <Link to="https://linkedin.com/">
+          {/* <Link to="https://linkedin.com/">
           <button type="button" className="bg-gray-200/20 backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  border border-white/30 shadow-lg p-6 transition duration-300 hover:bg-white/20 
                  hover:shadow-2xl hover:-translate-y-1 ease-in-out  font-satoshi tracking-wide px-6 py-2.5 text-md sm:text-lg md:text-xl inline-flex items-center text-center gap-2 cursor-pointer outline outline-offset-0 outline-solid outline-black">
             <IconContext.Provider value={{ size: "1.5em" , color: "0077B5"}}><FaLinkedin /></IconContext.Provider>
           </button>
-          </Link>
-          <Link to="https://github.com/">
+          </Link> */}
+          <Link to="https://github.com/nnahcus">
           <button type="button" className="bg-gray-200/20 backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  border border-white/30 shadow-lg p-6 transition duration-300 hover:bg-white/20 
                  hover:shadow-2xl hover:-translate-y-1 ease-in-out  font-satoshi tracking-wide px-6 py-2.5 text-md sm:text-lg md:text-xl inline-flex items-center text-center gap-2 cursor-pointer outline outline-offset-0 outline-solid outline-black">
             <IconContext.Provider value={{ size: "1.5em" }}><FaGithub /></IconContext.Provider>

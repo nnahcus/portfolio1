@@ -30,13 +30,21 @@ function Project(){
                 <h3 className="text-2xl font-poppins font-medium mb-4">
                   {project.title}
                 </h3>
-                <p className="text-md font-poppins mb-6">{project.description}</p>
+                <p className="text-md font-poppins mb-6 font-light">{project.description}</p>
+                <div className="flex gap-4">
                 <Link to={project.link}>
                   <button type="button" className="bg-gray-200/20 backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  border border-white/30 shadow-lg p-4 transition duration-300 hover:bg-white/20 
                  hover:shadow-2xl hover:-translate-y-1 ease-in-out  font-satoshi tracking-wide px-4 py-2.5 text-md inline-flex items-center text-center gap-2 cursor-pointer outline outline-offset-0 outline-solid outline-black">
                     View Project
                   </button>
                 </Link>
+                <Link to={project.github}>
+                  <button type="button" className="bg-stone-900/70 text-white backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  shadow-lg p-4 transition duration-300 hover:bg-zinc-800/70 
+                 hover:shadow-2xl hover:-translate-y-1 ease-in-out  font-satoshi tracking-wide px-4 py-2.5 text-md inline-flex items-center text-center gap-2 cursor-pointer outline outline-offset-0">
+                    Github
+                  </button>
+                </Link>
+                </div>
               </div>
               </div>
             ))

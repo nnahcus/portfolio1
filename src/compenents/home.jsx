@@ -22,12 +22,12 @@ function Home() {
           <p className="text-md sm:text-lg max-w-2xl py-1 font-poppins">I passionate about coding and programming.</p>
           <p className="text-md sm:text-lg max-w-2xl py-1 font-poppins">I enjoy building web applications, and solving challenging problems.</p>
           <div className="flex gap-4 py-8">          
-          <Link to="https://linkedin.com/">
+          {/* <Link to="https://linkedin.com/">
           <button type="button" className="bg-gray-200/20 backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  border border-white/30 shadow-lg p-6 transition duration-300 hover:bg-white/20 
                  hover:shadow-2xl hover:-translate-y-1 ease-in-out  font-satoshi tracking-wide px-6 py-2.5 text-md sm:text-lg md:text-xl inline-flex items-center text-center gap-2 cursor-pointer outline outline-offset-0 outline-solid outline-black">
             <IconContext.Provider value={{ size: "1.5em" , color: "0077B5"}}><FaLinkedin /></IconContext.Provider>
           </button>
-          </Link>
+          </Link> */}
           <Link to="https://github.com/">
           <button type="button" className="bg-gray-200/20 backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  border border-white/30 shadow-lg p-6 transition duration-300 hover:bg-white/20 
                  hover:shadow-2xl hover:-translate-y-1 ease-in-out  font-satoshi tracking-wide px-6 py-2.5 text-md sm:text-lg md:text-xl inline-flex items-center text-center gap-2 cursor-pointer outline outline-offset-0 outline-solid outline-black">
@@ -41,7 +41,8 @@ function Home() {
           </button>
           </Link>
           <HashLink smooth={true} offset={-100} duration={500} to="#Project">
-          <button type="button" className="bg-gray-200/20 backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  border border-white/30 shadow-lg p-6 transition duration-300 hover:bg-white/20 
+          <button type="button" className="bg-gray-2
+          00/20 backdrop-blur-md rounded-xl bg-clip-padding backdrop-filter  border border-white/30 shadow-lg p-6 transition duration-300 hover:bg-white/20 
                  hover:shadow-2xl hover:-translate-y-1 ease-in-out  font-satoshi tracking-wide px-6 py-2.5 text-md sm:text-lg md:text-xl inline-flex items-center text-center gap-2 cursor-pointer outline outline-offset-0 outline-solid outline-black">
                 My projects
               </button>
