@@ -1,17 +1,19 @@
 const projects = [
     {
-        title: "Project Title 1",
-        description: "A brief description of Project 1. This project involves...",
-        link: "#",
+        title: "Bingelogg",
+        description: "A full-stack media tracking website you can track movies, tv shows, series you have watched and want to watch. Built with Next.js, Tailwind CSS, Supabase, The Movie Database (TMDb) API and Jikan API.",
+        link: "https://bingelogg.vercel.app/",
         id: 1,
-        image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        image: "src/pic/bingelogg.vercel.app_dashboard (1).png",
+        github: "https://github.com/nnahcus/bingelogg"
     },
     {
-        title: "Project Title 2",
-        description: "A brief description of Project 2. This project involves...",
+        title: "Portfolio",
+        description: "My personal portfolio website to showcase my skills, projects. Built with React, Tailwind CSS, and Vite.",
         link: "#",
         id: 2,
-        image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        image: "src/pic/localhost_5173_.png",
+        github: ""
     }
 ];
 export { projects };
